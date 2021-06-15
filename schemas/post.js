@@ -1,6 +1,6 @@
 export default {
 	name: "post",
-	title: "Post",
+	title: "Recept",
 	type: "document",
 	fields: [
 		{
@@ -36,6 +36,12 @@ export default {
 			title: "Categories",
 			type: "array",
 			of: [{ type: "reference", to: { type: "category" } }],
+		},
+		{
+			name: "ingrediences",
+			title: "Ingrediences",
+			type: "array",
+			of: [{ type: "reference", to: { type: "ingredience" } }],
 		},
 		{
 			name: "publishedAt",
