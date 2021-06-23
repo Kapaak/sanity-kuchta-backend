@@ -8,5 +8,18 @@ export default {
 			title: "ingredience",
 			type: "string",
 		},
+		{
+			name: "koreni",
+			title: "Koreni",
+			type: "array",
+			of: [
+				{
+					type: "string",
+				},
+			],
+			options: {
+				layout: "tags",
+			},
+		},
 	],
 };
