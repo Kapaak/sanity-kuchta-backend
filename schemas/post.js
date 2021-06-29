@@ -5,12 +5,12 @@ export default {
 	fields: [
 		{
 			name: "title",
-			title: "Title",
+			title: "Titulek",
 			type: "string",
 		},
 		{
 			name: "slug",
-			title: "Slug",
+			title: "Adresa",
 			type: "slug",
 			options: {
 				source: "title",
@@ -19,38 +19,38 @@ export default {
 		},
 		{
 			name: "author",
-			title: "Author",
+			title: "Autor",
 			type: "reference",
 			to: { type: "author" },
 		},
 		{
 			name: "mainImage",
-			title: "Main image",
+			title: "Hlavni obrazek",
 			type: "image",
 			options: {
 				hotspot: true,
 			},
 		},
 		{
-			name: "categories",
-			title: "Categories",
+			name: "category",
+			title: "Kategorie",
 			type: "array",
 			of: [{ type: "reference", to: { type: "category" } }],
 		},
-		{
-			name: "ingrediences",
-			title: "Ingrediences",
-			type: "array",
-			of: [{ type: "reference", to: { type: "ingredience" } }],
-		},
+
 		{
 			name: "publishedAt",
-			title: "Published at",
+			title: "Datum zverejneni",
 			type: "datetime",
 		},
 		{
+			name: "ingredience",
+			title: "Ingredience",
+			type: "blockContent",
+		},
+		{
 			name: "body",
-			title: "Body",
+			title: "Postup",
 			type: "blockContent",
 		},
 	],
