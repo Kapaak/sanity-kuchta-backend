@@ -5,12 +5,12 @@ export default {
 	fields: [
 		{
 			name: "title",
-			title: "Title",
+			title: "Titulek",
 			type: "string",
 		},
 		{
 			name: "slug",
-			title: "Slug",
+			title: "Adresa",
 			type: "slug",
 			options: {
 				source: "title",
@@ -25,7 +25,7 @@ export default {
 		// },
 		{
 			name: "mainImage",
-			title: "Main image",
+			title: "Hlavni obrazek",
 			type: "image",
 			options: {
 				hotspot: true,
@@ -82,8 +82,13 @@ export default {
 			validation: Rule => Rule.required().error("Nesmí být prázdné."),
 		},
 		{
+			name: "ingredience",
+			title: "Ingredience",
+			type: "blockContent",
+		},
+		{
 			name: "body",
-			title: "Body",
+			title: "Postup",
 			type: "blockContent",
 		},
 	],
